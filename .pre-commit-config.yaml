@@ -5,5 +5,4 @@ repos:
         name: Evaluate Changes
         entry: python scripts/evaluate_commit.py
         language: system
-#        files: '\.py$'
         pass_filenames: true
