@@ -14,7 +14,7 @@ def evaluate_code(code):
         {"role": "system", "content": "You are a helpful assistant."},
         {
             "role": "user",
-            "content": f"Evaluate the following Python code changes (include 'loogs good' in the response if acceptable):\n{file_changed}",
+            "content": f"Evaluate the following Python code changes (include 'looks good' in the response if acceptable):\n{file_changed}",
         },
     ]
     model_id = "gpt-3.5-turbo"
