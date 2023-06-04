@@ -11,7 +11,10 @@ def evaluate_code(code):
         file_changed = file.read()
 
     messages = [
-        {"role": "system", "content": "You are a helpful assistant."},
+        {
+            "role": "system",
+            "content": "You are a helpful assistant."
+        },
         {
             "role": "user",
             "content": f"Evaluate the following Python code changes (include 'looks good' in the response if acceptable):\n{file_changed}",
