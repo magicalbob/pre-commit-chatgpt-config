@@ -32,7 +32,7 @@ def evaluate_code(code):
     print(response)
     print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
     answer = response.choices[0].message.content
-    if "Looks good" in answer:
+    if ("Looks good" in answer) or ("looks good" in answer):
         return True
     else:
         return False
