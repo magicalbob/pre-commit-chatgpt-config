@@ -10,7 +10,7 @@ def evaluate_code(code):
         try:
             file_changed = file.read()
         except:
-            pint(f"DEBUG: file {code} cannot be read.")
+            print(f"DEBUG: file {code} cannot be read.")
             exit(0)
 
     messages = [
